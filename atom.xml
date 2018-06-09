@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <title>牛牛&#39;s| blog</title>
+
+
+    <link href="/atom.xml" rel="self"/>
+
+    <link href="http://www.niuhead.com/"/>
+    <updated>2017-10-05T06:25:13.000Z</updated>
+    <id>http://www.niuhead.com/</id>
+
+    <author>
+        <name>niuniu</name>
+
+    </author>
+
+    <generator uri="http://hexo.io/">Hexo</generator>
+
+    <entry>
+        <title>Hello World</title>
+        <link href="http://www.niuhead.com/2017/11/10/hello-world/"/>
+        <id>http://www.niuhead.com/2017/11/10/hello-world/</id>
+        <published>2017-11-10T15:27:08.511Z</published>
+        <updated>2017-10-05T06:25:13.000Z</updated>
+
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>]]></content>
+
+        <summary type="html">
+
+
+
+            &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+
+
+        </summary>
+
+
+    </entry>
+
+    <entry>
+        <title>Ubuntu17.04+github+hexo 搭建博客</title>
+        <link href="http://www.niuhead.com/2017/11/01/Ubuntu17.04+github+hexo%20%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
+        <id>http://www.niuhead.com/2017/11/01/Ubuntu17.04+github+hexo 搭建博客/</id>
+        <published>2017-11-01T07:22:58.000Z</published>
+        <updated>2017-11-11T02:48:34.125Z</updated>
+
+        <content type="html"><![CDATA[<h3 id="第一步"><a href="#第一步" class="headerlink" title="第一步:"></a>第一步:</h3><p> 首先安装nodejs,这个是hexo运行的基础环境,安装很简便:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get install nodejs</span><br></pre></td></tr></table></figure></p><h3 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h3><p> 安装npm,这个也很简单,这是是node.js的包管理器,跟apt,pip等差不多的东东, 直接<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo apt-get install npm</span><br></pre></td></tr></table></figure></p><h3 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h3><p>接下来安装hexo或者hexo-cli,后者安装出现问题,前者没有问题,暂时还不知道原因.所以我安装的是hexo,如果你使用sudo npm install hexo -g 或者 sudo npm install hexo-cli -g,是不会成功的,最起码我是这样的。<br>正确的方法如下:<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo npm install --unsafe-perm --verbose -g hexo</span><br></pre></td></tr></table></figure></p><h3 id="第四步"><a href="#第四步" class="headerlink" title="第四步"></a>第四步</h3><p>修改以下hexo所在路径的文件<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ sudo vi /usr/<span class="built_in">local</span>/lib/node_modules/hexo/bin/hexo</span><br></pre></td></tr></table></figure></p><p>把#!/usr/bin/env node修改为!/usr/bin/env nodejs即可</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#!/usr/bin/env nodejs</span><br><span class="line">&apos;use strict&apos;;</span><br><span class="line">require(&apos;hexo-cli&apos;)();</span><br></pre></td></tr></table></figure><p>然后输入hexo 看是否安装成功</p><h3 id="第五步"><a href="#第五步" class="headerlink" title="第五步"></a>第五步</h3><p>创建项目：</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$ mkdir blog</span><br><span class="line">$ cd blog</span><br><span class="line">$ hexo init</span><br><span class="line">$ hexo g # 生成</span><br><span class="line">$ hexo s # 启动服务</span><br></pre></td></tr></table></figure><p>然后输入127.0.0.1：4000 就可以预览蓝</p><h3 id="第六步"><a href="#第六步" class="headerlink" title="第六步"></a>第六步</h3><p>上传到github</p><p>首先在github 建造一个 youname(自己的github名字).github.io</p><p>在项目文件下安装插件</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure><p>在__config.yml中加入</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line">     type: git</span><br><span class="line">     repository: git@github.com:youname/youmane.github.io.git</span><br><span class="line">     branch: master</span><br></pre></td></tr></table></figure><p>然后进入blog 文件</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br><span class="line">$ hexo d</span><br></pre></td></tr></table></figure><p>就可以上传到github了。然后youname.github.io 就可以访问到blog蓝</p>]]></content>
+
+        <summary type="html">
+
+
+
+            &lt;h3 id=&quot;第一步&quot;&gt;&lt;a href=&quot;#第一步&quot; class=&quot;headerlink&quot; title=&quot;第一步:&quot;&gt;&lt;/a&gt;第一步:&lt;/h3&gt;&lt;p&gt; 首先安装nodejs,这个是hexo运行的基础环境,安装很简便:&lt;br&gt;&lt;figure class=&quot;highlight ba
+
+
+        </summary>
+
+        <category term="Linux" scheme="http://www.niuhead.com/categories/Linux/"/>
+
+
+        <category term="github" scheme="http://www.niuhead.com/tags/github/"/>
+
+        <category term="hexo" scheme="http://www.niuhead.com/tags/hexo/"/>
+
+    </entry>
+
+    <entry>
+        <title>设计模式</title>
+        <link href="http://www.niuhead.com/2017/10/06/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+        <id>http://www.niuhead.com/2017/10/06/设计模式/</id>
+        <published>2017-10-06T09:34:37.000Z</published>
+        <updated>2017-11-11T02:57:48.002Z</updated>
+
+        <summary type="html">
+
+        </summary>
+
+        <category term="PHP" scheme="http://www.niuhead.com/categories/PHP/"/>
+
+
+    </entry>
+
+    <entry>
+        <title>《高性能MySQL》笔记 - MySQL 锁的基本类型</title>
+        <link href="http://www.niuhead.com/2017/10/06/mysql-lock/"/>
+        <id>http://www.niuhead.com/2017/10/06/mysql-lock/</id>
+        <published>2017-10-06T07:53:58.000Z</published>
+        <updated>2017-11-10T15:29:52.933Z</updated>
+
+        <content type="html"><![CDATA[<h3 id="MySQL-主要在两个层面上实现并发控制：服务器层和存储引擎层。"><a href="#MySQL-主要在两个层面上实现并发控制：服务器层和存储引擎层。" class="headerlink" title="MySQL 主要在两个层面上实现并发控制：服务器层和存储引擎层。"></a>MySQL 主要在两个层面上实现并发控制：服务器层和存储引擎层。</h3><p>当读写有冲突的时候，一般对于MySQL来说，是进行锁表操作的。</p><h3 id="读写锁"><a href="#读写锁" class="headerlink" title="读写锁"></a>读写锁</h3><p>读锁：读锁是共享的，多个用户同一时刻读取同一资源，他们之前互不影响。</p><p>写锁：写锁则是排他的，也就是说一个写锁会阻塞其他的写锁和读锁，这是出于安全策略的考虑，只有这样，才能确保在给定的时间里，只有一个用户能执行写入，并防止其他用户读取正在写入的同一资源。</p><h3 id="锁粒度"><a href="#锁粒度" class="headerlink" title="锁粒度"></a>锁粒度</h3><p>一种提高共享资源的并发性的方式就是让锁定的对象更有选择性。尽量只锁定需要修改的部分数据，而不是所有资源。更加理想的方式是，只对会修改的数据片进行精确的锁定。任何时候，在给定的资源上，锁定的数据量越少，则系统的并发程度越高，只要相互之间不发生冲突即可。</p><p>但是，所有的锁都是需要消耗资源的。锁的各种操作，包括获得锁，检查锁是否已经解除，释放锁等，都会增加系统的开销。</p><p>这里我们可以意识到：所谓的锁策略，是在锁的开销和数据的安全之间寻求平衡，这种平衡会影响到性能。</p><h4 id="表锁"><a href="#表锁" class="headerlink" title="表锁"></a>表锁</h4><p>表锁是MySQL中的基本策略，并且是开销最小的策略。当一个用户在对表进行操作(CUD)前，需要先获得写锁，这会阻塞其他用户对该表的所有操作。只有没有写锁时，其他读取用户才能获得读锁，读锁之间互不阻塞。</p><h4 id="行锁"><a href="#行锁" class="headerlink" title="行锁"></a>行锁</h4><p>行级锁可以最大程度的支持并发处理(同时也带来了最大的锁开销)。</p>]]></content>
+
+        <summary type="html">
+
+
+
+            &lt;h3 id=&quot;MySQL-主要在两个层面上实现并发控制：服务器层和存储引擎层。&quot;&gt;&lt;a href=&quot;#MySQL-主要在两个层面上实现并发控制：服务器层和存储引擎层。&quot; class=&quot;headerlink&quot; title=&quot;MySQL 主要在两个层面上实现并发控制：服务器层和存储
+
+
+        </summary>
+
+        <category term="MySQL" scheme="http://www.niuhead.com/categories/MySQL/"/>
+
+
+        <category term="MySQl" scheme="http://www.niuhead.com/tags/MySQl/"/>
+
+        <category term="高并发" scheme="http://www.niuhead.com/tags/%E9%AB%98%E5%B9%B6%E5%8F%91/"/>
+
+        <category term="数据库锁" scheme="http://www.niuhead.com/tags/%E6%95%B0%E6%8D%AE%E5%BA%93%E9%94%81/"/>
+
+    </entry>
+
+    <entry>
+        <title>Linux 常用命令</title>
+        <link href="http://www.niuhead.com/2017/10/05/linux/"/>
+        <id>http://www.niuhead.com/2017/10/05/linux/</id>
+        <published>2017-10-05T07:22:58.000Z</published>
+        <updated>2017-11-11T02:57:29.167Z</updated>
+
+        <summary type="html">
+
+        </summary>
+
+        <category term="Linux" scheme="http://www.niuhead.com/categories/Linux/"/>
+
+
+        <category term="Linux" scheme="http://www.niuhead.com/tags/Linux/"/>
+
+    </entry>
+
+    <entry>
+        <title>写在开头</title>
+        <link href="http://www.niuhead.com/2017/10/05/my-first-blog/"/>
+        <id>http://www.niuhead.com/2017/10/05/my-first-blog/</id>
+        <published>2017-10-05T07:22:28.000Z</published>
+        <updated>2017-11-10T15:29:52.925Z</updated>
+
+        <content type="html"><![CDATA[<p>嗯,作为一个coder,早就有打算做一个博客的的想法，今天用github+hexo搭建这个blog，基本上还算顺利！<br>以后的日子里，会将工作中遇到的一些问题解决的方案记录在这里。由于一些客观原因，有的解决方案会有些缺陷，欢迎PR！</p><p>嗯，今天是blog可以访问的第一天，也算是自己的一个小小的成就。<br>目前的想法是blog的内容主要有 PHP，MySQL，Linux(简单的运维知识)，以及会有一些python的东西。</p>]]></content>
+
+        <summary type="html">
+
+
+
+            &lt;p&gt;嗯,作为一个coder,早就有打算做一个博客的的想法，今天用github+hexo搭建这个blog，基本上还算顺利！&lt;br&gt;以后的日子里，会将工作中遇到的一些问题解决的方案记录在这里。由于一些客观原因，有的解决方案会有些缺陷，欢迎PR！&lt;/p&gt;
+            &lt;p&gt;嗯，今天是blog可以
+
+
+        </summary>
+
+        <category term="PHP" scheme="http://www.niuhead.com/categories/PHP/"/>
+
+
+    </entry>
+
+    <entry>
+        <title>如何优雅的使用接口</title>
+        <link href="http://www.niuhead.com/2017/06/02/interface/"/>
+        <id>http://www.niuhead.com/2017/06/02/interface/</id>
+        <published>2017-06-02T07:22:28.000Z</published>
+        <updated>2017-11-10T16:38:38.206Z</updated>
+
+        <content type="html"><![CDATA[<p>嗯，6.1刚过完，我们不在是宝宝了，来吧，撸一篇接口的文章(interface).</p><p>在编程的过程中我们应该学会如何使用接口来给变我们的生活，极大的提升自我能力。<br>接口不是新特性，但是非常重要，下面我们来撸个接口的小例子。</p><p>虚构一个DocumentStore的类，这个类负责从不同的资源收集文本。可以从远程url读取html，也可以读取资源，也可以收集终端命令输出。</p><p><strong>定义DocumentStore类</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">class DocumentStore&#123;</span><br><span class="line">    protected $data = [];</span><br><span class="line">    </span><br><span class="line">    public function addDocument(Documenttable $document)&#123;</span><br><span class="line">        $key = $document-&gt;getId();</span><br><span class="line">        $value = $document-&gt;getContent();</span><br><span class="line">        $this-&gt;data[key] = $value;        </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    public function getDocuments()&#123;</span><br><span class="line">        return $this-&gt;data;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>既然addDocument()方法的参数只能是Documenttable的类的实例，这样定义DocumentStore的类怎么行呢? 其实Documenttable不是类，是接口；</p><p><strong>定义Documenttable</strong></p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">interface Documenttable&#123;</span><br><span class="line">    public function getId();</span><br><span class="line">    public function getContent(); </span><br><span class="line">   </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p>这个接口定义表名，实现Documenttable接口的任何对象都必须提供一个公开的getId()方法和一个公开的getContent()方法。</p><p>可是这么做有什么用呢？这么做的好处就是，我们可以分开定义获取稳定的类，而且能使用十分不同的方法。下面是一种实现方式，这种方式使用curl从远程url获取html。</p><p><strong>定义HtmlDocument类</strong></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">class HtmlDocument implements Documenttable&#123;</span><br><span class="line"></span><br><span class="line">    protected <span class="variable">$url</span>;</span><br><span class="line"></span><br><span class="line">    public <span class="keyword">function</span> __construct(<span class="variable">$url</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="variable">$this</span>-&gt;url = <span class="variable">$url</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public <span class="keyword">function</span> <span class="function"><span class="title">getId</span></span>()&#123;</span><br><span class="line">        <span class="built_in">return</span> <span class="variable">$this</span>-&gt;url;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public <span class="keyword">function</span> <span class="function"><span class="title">getContent</span></span>()&#123;</span><br><span class="line">        <span class="variable">$ch</span> = curl_init();</span><br><span class="line">        curl_setopt(<span class="variable">$ch</span>,CURLOPT_URL,<span class="variable">$this</span>-&gt;url);</span><br><span class="line">        curl_setopt(<span class="variable">$ch</span>,CURLOPT_RETURNTRANSFER,1);</span><br><span class="line">        curl_setopt(<span class="variable">$ch</span>,CURLOPT_CONNECTTIMEOUT,3);</span><br><span class="line">        curl_setopt(<span class="variable">$ch</span>,CURLOPT_FOLLOWLOCATION,1);</span><br><span class="line">        curl_setopt(<span class="variable">$ch</span>,CURLOPT_MAXREDIRS,3);</span><br><span class="line">        curl_close(<span class="variable">$ch</span>);</span><br><span class="line">        <span class="built_in">return</span> <span class="variable">$thml</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><strong>下面一个方法是获取流资源。</strong></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">class StreamDocument implements Documenttable&#123;</span><br><span class="line">    protected <span class="variable">$resource</span>;</span><br><span class="line">    protected <span class="variable">$buffer</span>;</span><br><span class="line"></span><br><span class="line">    public <span class="keyword">function</span> __construct(<span class="variable">$resource</span>,<span class="variable">$buffer</span> = 4096)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="variable">$this</span>-&gt;resource=<span class="variable">$resource</span>;</span><br><span class="line">        <span class="variable">$this</span>-&gt;buffer=<span class="variable">$buffer</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public <span class="keyword">function</span> <span class="function"><span class="title">getId</span></span>()&#123;</span><br><span class="line"></span><br><span class="line">        <span class="built_in">return</span> <span class="string">'resource-'</span> .(int)<span class="variable">$this</span>-&gt;resource;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public <span class="keyword">function</span> <span class="function"><span class="title">getContent</span></span>()&#123;</span><br><span class="line">        <span class="variable">$streamContent</span> = <span class="string">''</span>;</span><br><span class="line">        rewind(<span class="variable">$this</span>-&gt;resource);</span><br><span class="line">        <span class="keyword">while</span> (feof(<span class="variable">$this</span>-&gt;resource) === <span class="literal">false</span>)&#123;</span><br><span class="line">            <span class="variable">$streamContent</span> .= fread(<span class="variable">$this</span>-&gt;resource,<span class="variable">$this</span>-&gt;buffer);</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">return</span> <span class="variable">$streamContent</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><strong>下面一个类是获取终端命令行的执行结果。</strong></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">class CommandOutDocument implements Documenttable&#123;</span><br><span class="line">    protected <span class="variable">$command</span>;</span><br><span class="line">    public <span class="keyword">function</span> __construct(<span class="variable">$command</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="variable">$this</span>-&gt;<span class="built_in">command</span>=<span class="variable">$command</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    public <span class="keyword">function</span> <span class="function"><span class="title">getId</span></span>()&#123;</span><br><span class="line">        <span class="built_in">return</span> <span class="variable">$this</span>-&gt;<span class="built_in">command</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public <span class="keyword">function</span> <span class="function"><span class="title">getContent</span></span>()&#123;</span><br><span class="line">        <span class="built_in">return</span> shell_exec(<span class="variable">$this</span>-&gt;<span class="built_in">command</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><strong>下面我们来演示一下借助上面的三个类来实现DocumentStore类。</strong></p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="variable">$documentStore</span> = new DocumentStore();</span><br><span class="line"></span><br><span class="line">//添加html文档</span><br><span class="line"><span class="variable">$htmlDoc</span> = new HtmlDocument(<span class="string">'https:// www.i360.me'</span>);</span><br><span class="line"></span><br><span class="line"><span class="variable">$documentStore</span>-&gt;addDocument(<span class="variable">$htmlDoc</span>);</span><br><span class="line"></span><br><span class="line">//添加流文档</span><br><span class="line"></span><br><span class="line"><span class="variable">$streamDOC</span> = new StreamDocument(fopen(<span class="string">'stream.txt'</span>,<span class="string">'rb'</span>));</span><br><span class="line"></span><br><span class="line"><span class="variable">$documentStore</span>-&gt;addDocument(<span class="variable">$streamDOC</span>);</span><br><span class="line"></span><br><span class="line">//添加终端命令文档</span><br><span class="line"></span><br><span class="line"><span class="variable">$cmdDoc</span> = new CommandOutDocument(<span class="string">'cat /etc/hosts'</span>);</span><br><span class="line"></span><br><span class="line"><span class="variable">$documentStore</span>-&gt;addDocument(<span class="variable">$command</span>);</span><br><span class="line"></span><br><span class="line">print_r(<span class="variable">$documentStore</span>-&gt;getDocuments());die;</span><br></pre></td></tr></table></figure><p>这里HtmlDocument，StreamDocument，CommandOutDocument这三个类没有任何共同点，只是实现了同一个接口。</p>]]></content>
+
+        <summary type="html">
+
+
+
+            &lt;p&gt;嗯，6.1刚过完，我们不在是宝宝了，来吧，撸一篇接口的文章(interface).&lt;/p&gt;
+            &lt;p&gt;在编程的过程中我们应该学会如何使用接口来给变我们的生活，极大的提升自我能力。&lt;br&gt;接口不是新特性，但是非常重要，下面我们来撸个接口的小例子。&lt;/p&gt;
+            &lt;p&gt;虚构一个Docum
+
+
+        </summary>
+
+        <category term="PHP" scheme="http://www.niuhead.com/categories/PHP/"/>
+
+
+        <category term="接口" scheme="http://www.niuhead.com/tags/%E6%8E%A5%E5%8F%A3/"/>
+
+        <category term="设计模式" scheme="http://www.niuhead.com/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+
+    </entry>
+
+</feed>
